@@ -53,7 +53,7 @@ while True:
 if data_list:
     df = pd.DataFrame(data_list)
 
-    output_directory = 'test'
+    output_directory = 'data'
 
     os.makedirs(output_directory, exist_ok=True)
 
