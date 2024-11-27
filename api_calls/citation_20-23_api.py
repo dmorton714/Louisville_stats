@@ -56,7 +56,7 @@ for url in urls:
 if data_list:
     df = pd.DataFrame(data_list)
 
-    output_directory = 'test'
+    output_directory = 'data'
     os.makedirs(output_directory, exist_ok=True)
     output_path = os.path.join(output_directory, 'citations_20-23.csv')
     df.to_csv(output_path, index=False)

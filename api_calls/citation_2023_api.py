@@ -53,11 +53,11 @@ while True:
 if data_list:
     df = pd.DataFrame(data_list)
 
-    output_directory = 'test'
+    output_directory = 'data'
 
     os.makedirs(output_directory, exist_ok=True)
 
-    output_path = os.path.join(output_directory, 'expen.csv')
+    output_path = os.path.join(output_directory, 'citation2023.csv')
     df.to_csv(output_path, index=False)
 
     print(f"Data saved to {output_path}")
