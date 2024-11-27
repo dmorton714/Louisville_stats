@@ -162,9 +162,14 @@ cython_debug/
 #.idea/
 
 test
-data
 .csv
 .DS_Store
 run_project.txt
 ml_notes.md
 ml2.md
+
+# Ignore all files in the data folder
+data/*
+
+# Whitelist the specific file
+!data/sworn_officers.csv
