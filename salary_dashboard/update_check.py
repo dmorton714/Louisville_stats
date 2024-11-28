@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
 '''
-This is used to check when the salary data was last updated 
+This is used to check when the salary data was last updated
 to calculate 2024 salary data later.
 '''
 
