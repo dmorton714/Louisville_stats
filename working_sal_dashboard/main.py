@@ -84,6 +84,7 @@ try:
         top_dev.style.format({
             'YTD_Total': '${:,.2f}',
             'Salary_Total': '${:,.2f}',
+            'Annual_Rate': '${:,.2f}',
             'Deviation': '${:,.2f}',
             'Deviation_Pct': '{:,.2f}%'
         }),

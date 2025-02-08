@@ -51,6 +51,7 @@ def get_top_deviations(data, year, limit=10):
     budget = year_data['Annual_Rate'] + year_data['Incentive_Allowance']
     year_data['Deviation'] = year_data['YTD_Total'] - budget
     year_data['Deviation_Pct'] = (year_data['Deviation'] / budget * 100).round(2)
+    year_data['Annual_Rate'] = year_data['Annual_Rate'].round(2)
 
     return year_data.nlargest(limit, 'Deviation_Pct')[
         ['Employee_Name', 'Department', 'YTD_Total', 'Annual_Rate', 'Deviation', 'Deviation_Pct']
