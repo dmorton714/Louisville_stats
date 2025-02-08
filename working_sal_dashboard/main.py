@@ -7,7 +7,7 @@ from utils.visualizations import create_gauge_chart, create_department_compariso
 # Page config
 st.set_page_config(
     page_title="Louisville Metro Salary Tracker",
-    page_icon="📊",
+    page_icon="LMG",
     layout="wide"
 )
 
