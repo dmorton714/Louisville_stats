@@ -39,6 +39,7 @@ div[data-testid="stMetricValue"] {
 
 h1 {
     color: #004080;
-    padding: 20px 0;
+    padding: -20px 0;
     margin-bottom: 30px;
+    text-align: left;
 }
