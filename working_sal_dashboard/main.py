@@ -23,7 +23,7 @@ with col2:
 # Load and process data
 @st.cache_data
 def load_data():
-    data = pd.read_csv("data/salary.csv")
+    data = pd.read_csv("../data/salary.csv")
     return process_salary_data(data, datetime.now().strftime("%B %d, %Y"))
 
 try:
