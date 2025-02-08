@@ -18,7 +18,9 @@ with open('working_sal_dashboard/assets/style.css') as f:
 # Header
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
-    st.title("Louisville Metro Government Salary Tracker")
+    with col2:
+        # st.title("Louisville Metro Government Salary Tracker")
+        st.markdown("<h1 style='text-align: left; margin-left: 20px; white-space: nowrap;'>Louisville Metro Government Salary Tracker</h1>", unsafe_allow_html=True)
 
 # Load and process data
 @st.cache_data
