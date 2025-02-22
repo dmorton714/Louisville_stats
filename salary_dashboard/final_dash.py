@@ -275,7 +275,7 @@ def main():
     date_div = check_data_updated()
 
     # Process the salary data
-    data = pd.read_csv("data/salary.csv")
+    data = pd.read_csv("data2/salary.csv")
     data = process_salary_data(data, date_div)
 
     # Code for 5

@@ -57,7 +57,7 @@ if data_list:
 
     os.makedirs(output_directory, exist_ok=True)
 
-    output_path = os.path.join(output_directory, 'salary.csv')
+    output_path = os.path.join(output_directory, 'salary2.csv')
     df.to_csv(output_path, index=False)
 
     print(f"Data saved to {output_path}")
