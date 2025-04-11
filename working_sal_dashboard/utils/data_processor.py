@@ -47,7 +47,7 @@ def get_metrics(data, year):
         'variance_pct': variance_pct
     }
 
-def get_top_deviations(data, year, limit=10):
+def get_top_deviations(data, year, limit=20):
     '''
     Get top salary deviations
     '''
