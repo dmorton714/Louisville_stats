@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 from datetime import datetime
 
+
 def process_salary_data(data, date_div):
     '''
     Process salary data with transformations and calculations
@@ -25,6 +26,9 @@ def process_salary_data(data, date_div):
         data.loc[data['CalYear'] == c_year, 'Annual_Rate'] = (
             data.loc[data['CalYear'] == c_year, 'Annual_Rate'] / 52 * week
         )
+
+    # Filter for YTD_Total and Annual_Rate both over 8,000
+    data = data[(data['YTD_Total'] > 8000) & (data['Annual_Rate'] > 8000)]
 
     return data
 

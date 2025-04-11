@@ -52,6 +52,7 @@ def create_department_comparison(data, year):
 
     dept_data['Budget'] = dept_data['Annual_Rate'] + dept_data['Incentive_Allowance']
     dept_data['Variance_Pct'] = ((dept_data['YTD_Total'] - dept_data['Budget']) / dept_data['Budget'] * 100)
+    dept_data['Variance_Pct'] = dept_data['Variance_Pct'].round(2)
 
     fig = px.bar(dept_data.sort_values('Variance_Pct'),
                  y='Department',

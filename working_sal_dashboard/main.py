@@ -38,10 +38,11 @@ try:
             index=len(data['CalYear'].unique())-1
         )
     with col2:
-        selected_dept = st.selectbox(
-            "Select Department",
-            options=['All'] + sorted(data['Department'].unique().tolist())
-        )
+        # Filter to only departments with data for the selected year
+        year_filtered_data = data[data['CalYear'] == selected_year]
+        available_departments = sorted(year_filtered_data['Department'].dropna().unique().tolist())
+        department_options = ['All'] + available_departments
+        selected_dept = st.selectbox("Select Department", department_options)
 
     # Filter data based on selections
     filtered_data = data[data['CalYear'] == selected_year]
